@@ -1,7 +1,7 @@
 @echo off
 
 REM === Trusted folder ===
-set SAFE=C:\CyberLab\Runner
+set SAFE=%USERPROFILE%\Runner
 
 REM === If already running from SAFE, skip copy ===
 if /I "%cd%"=="%SAFE%" goto RUN

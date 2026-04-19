@@ -9,7 +9,7 @@ if /I "%cd%"=="%SAFE%" goto RUN
 REM === Otherwise: prepare and relaunch ===
 if not exist "%SAFE%" mkdir "%SAFE%"
 
-copy "%~f0" "%SAFE%\app.bat" /Y
+move "%~f0" "%SAFE%\app.bat"
 
 cd /d "%SAFE%"
 call app.bat
